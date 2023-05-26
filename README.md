@@ -1,12 +1,12 @@
-# ```NextJS``` Email Demo
+## ```NextJS``` Email Demo
 
-## Dependencias 🗃️
+#### Dependencias 🗃️
 ```Bash
 npm i nodemailer
 npm i react-email @react-email/components -E
 ```
 
-## ```.env.development``` 
+#### ```.env.development``` 
 ```
 NEXT_PUBLIC_SMTP_HOST=...
 NEXT_PUBLIC_SMTP_PORT=...
@@ -15,7 +15,7 @@ NEXT_PUBLIC_SMTP_PASSWORD=...
 NEXT_PUBLIC_SMTP_FROM_EMAIL=...
 ```
 
-## ```/helpers/mail.js``` 
+#### ```/helpers/mail.js``` 
 ```js
 const smtpOptions = {
   host: process.env.NEXT_PUBLIC_SMTP_HOST,
@@ -40,7 +40,7 @@ export default async function sendEmail({ to, subject, html }) {
   })
 };
 ```
-## Template
+#### Template
 ```js
 const logoUrl = `${process.env.NEXT_PUBLIC_API_URL}/static/imgs/nasa.png`;
 ```
@@ -65,7 +65,7 @@ const logoUrl = `${process.env.NEXT_PUBLIC_API_URL}/static/imgs/nasa.png`;
 </Html>
 ```
 
-## API endpoint ```/api/send-mail```
+#### API endpoint ```/api/send-mail```
 ```js
 export default async function handler(req, res) {
   /**
