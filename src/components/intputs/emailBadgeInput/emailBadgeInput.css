@@ -1,0 +1,22 @@
+.base-input {
+  -webkit-appearance: none;
+}
+
+.input:focus {
+  border-color: cornflowerblue;
+  outline: none;
+}
+
+.input .has-error {
+  border-color: tomato;
+}
+
+.error {
+  margin: 0;
+  font-size: 90%;
+  color: tomato;
+}
+
+#badge:hover > button > #x_mark {
+  color: white;
+}
